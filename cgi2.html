@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "angular.min.js"></script>
+<script src = "jquery-1.11.3.min.js"></script>
+<script src = "bootstrap.js"></script>
+<script src = "app.js"></script>
+<link rel="stylesheet" type="text/css" href="bootstrap.css">
+
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body ng-app="myApp" ng-controller="myController">
+
+<div class = "container">
+<div class="page-header">
+ <h1>Add Contact</h1>
+</div>
+</div>
+
+  <form class = "form-horizontal" enctype="multipart/form-data" action="cgi2.py" method = "post" style="margin-top :2%">
+   
+   <div class ="form-group">
+    <label for = "first_name" class = "col-xs-2 control-label">First Name</label>
+    <div class = "col-xs-10">
+     <input type = "text" class="form-control" id = "first_name" name = "first_name" placeholder = "FirstName">
+    </div>
+   </div>
+   
+   
+  <div class ="form-group">
+    <label for = "last_name" class = "col-md-2 control-label">Last Name</label>
+    <div class = "col-md-10">
+     <input type = "text" class="form-control" id="last_name" name = "last_name" placeholder = "Last Name">
+    </div>
+   </div>
+   
+
+   
+     <div class ="form-group">
+    <label name = "last_name1" class = "col-md-2 control-label">Contact No</label>
+    <div class = "col-md-10">
+     <input type = "tel" name = "last_name1" id = "last_name1" class="form-control" placeholder = "Contact No">
+    </div>
+   </div>
+   
+    <div class ="form-group">
+    <label name = "breif_desc" class = "col-md-2 control-label">Brief Description</label>
+    <div class = "col-md-10">
+     <textarea name = "breif_desc" id = "breif_desc" class="form-control" placeholder = "Description"></textarea>
+    </div>
+   </div>
+   
+   
+<div class="form-control col-md-offset-2 col-md-10"> 
+<div class="dropdown" id="myDropdown" name="dropdown1">
+<a class="myDropdownHandle" data-toggle="dropdown"
+data-target="#" href="#" >
+   <span ng-bind="desig"></span><span class="caret"></span>
+</a>
+<ul class="dropdown-menu" id="demolist">
+<li><a href="#">Software Engineering</a></li>
+<li><a href="#">Software Designer</a></li>
+<li><a href="#">Software Developer</a></li>
+<li><a href="#">Software Tester</a></li>
+<li><a href="#">Business Developer</a></li>
+<li><a href="#">Human Resource</a></li>
+</ul>
+</div>
+</div>
+
+  <div class = "form-group">
+   <div class = "col-md-offset-2 col-md-10">
+     <div class = "checkbox">
+       <label class="control-label">
+       <input type = 'checkbox' name = "professional"/>Professional
+       </label>
+     </div>
+   </div>
+  </div>
+  
+    <div class = "form-group">
+    <div class = "radio">
+       <div class = "col-md-offset-2 col-md-10">
+        <label class="control-label">
+          <input type = "radio" name= "Radio" value="Male"/>Male
+        </label>
+      </div> 
+      </div>
+      
+      <div class = "radio">
+       <div class = "col-md-offset-2 col-md-10">
+        <label class="control-label">
+          <input type = "radio" name= "Radio" value="Female"/>Female
+        </label>
+      </div>       
+    </div>
+  </div>
+  
+  
+  <div class="form-group">
+  <div class="col-md-offset-2 col-md-10">
+    <input type="file" name="filename">
+    </div>
+  </div>
+  
+   
+  <div class = "form-group">
+   <div class = "col-md-offset-2 col-md-10">
+     <div class = "button">
+         <Button class = "btn btn-success">Get Report</Button>
+     </div>
+   </div>
+  </div>  
+  </form>
+  
+
+  
+
+ 
+
+
+</body>
+</html>
