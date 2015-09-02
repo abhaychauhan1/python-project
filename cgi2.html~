@@ -18,7 +18,7 @@
 </div>
 </div>
 
-  < class = "form-horizontal" enctype="multipart/form-data" action="cgi2.py" method = "post" style="margin-top :2%">
+  <form class = "form-horizontal" enctype="multipart/form-data" action="cgi2.py" method = "post" style="margin-top :2%">
    
    <div class ="form-group">
     <label for = "first_name" class = "col-xs-2 control-label">First Name</label>
